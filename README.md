@@ -1,4 +1,5 @@
-# VLSI-LAB-EXPERIMENTS
+
+EXPERIMENT 1
 AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
 
 APPARATUS REQUIRED: Xilinx 14.7 Spartan6 FPGA
@@ -38,10 +39,14 @@ Full Subtractor:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/7385a408-40a5-4203-8050-b72818622d79)
 
 
-
+HALF ADDER
 VERILOG CODE:
-
-----Type Verilog Code
+module ha(a,b,sum,carry);
+input a,b;
+output sum,carry;
+  xor (sum,a,b);
+  and (carry,a,b);
+endmodule
 
 OUTPUT:
 
